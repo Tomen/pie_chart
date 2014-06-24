@@ -1,0 +1,6 @@
+name: pie_chart
+description: A web application
+dependencies:
+  browser: any
+  stagexl: any
+  vector_math: any
