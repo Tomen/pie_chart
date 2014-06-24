@@ -41,8 +41,8 @@ class Slice {
 class PieChart extends Sprite {
   
   PieChart(){
-    Vector2 center = new Vector2(200.0,200.0);
-    num radius = 200.0;
+    Vector2 center = new Vector2(300.0,300.0);
+    num radius = 300.0;
     
     var stepSize = 360/slices.length;
     
@@ -88,8 +88,8 @@ class PieChart extends Sprite {
     slice.addChild(bitmapSprite);
     
     
-    renderPath(slice.graphics, center, radius, startingAngle, endingAngle);
-    slice.graphics.strokeColor(Color.Red);
+    //renderPath(slice.graphics, center, radius, startingAngle, endingAngle);
+    //slice.graphics.strokeColor(Color.Red);
     
     //colorFilter.adjustColoration(0xffde458b);
     //colorFilter.
@@ -102,6 +102,8 @@ class PieChart extends Sprite {
       slice.filters = [];
       slice.applyCache(0, 0, radius.toInt()*2, radius.toInt()*2);
     });
+
+    slice.applyCache(0, 0, radius.toInt()*2, radius.toInt()*2);
 
     return slice;  
   }
